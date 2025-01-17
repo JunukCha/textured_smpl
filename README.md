@@ -2,7 +2,7 @@
 ![image](result.jpg)
 
 ## Download
-#### Please download the SMPL pkl files from SMPL.
+#### Please download the SMPL pkl files from [SMPL](https://smpl.is.tue.mpg.de/).
 ![image](https://github.com/user-attachments/assets/d11d2b01-7724-4382-ae9b-b281aa2f4742)
 
 
@@ -10,7 +10,7 @@
 2. Female -> `cp basicModel_f_lbs_10_207_0_v1.0.0.pkl SMPL_FEMALE.pkl` (rename)
 3. UV obj -> `smpl_uv.obj`
 
-#### Please download the neutral SMPL pkl file from SMPLify.
+#### Please download the neutral SMPL pkl file from [SMPLify](https://smplify.is.tue.mpg.de/).
 ![image](https://github.com/user-attachments/assets/79c87c7a-89e3-4a8d-b498-9728183b90ed)
 
 
