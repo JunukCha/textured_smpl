@@ -17,7 +17,7 @@
 Neutral -> `cp basicModel_neutral_lbs_10_207_0_v1.0.0.pkl SMPL_NEUTRAL.pkl` (rename)
 
 
-#### Please download the texture png file from texture.
+#### Please download the texture png file from [texture](https://app.box.com/s/mdx2m368j9m0jgkkjnf67l6blrwrt20f).
 Download 'm_01_alb.002.png'.
 
 ### File tree
