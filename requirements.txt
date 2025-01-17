@@ -1,0 +1,5 @@
+smplx
+scipy
+chumpy
+opencv-python
+matplotlib
