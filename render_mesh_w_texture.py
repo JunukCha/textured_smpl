@@ -20,19 +20,16 @@ from pytorch3d.structures import Meshes
 
 def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    v, f, aux = load_obj("/data/smplx_models/smpl_uv.obj")
+    v, f, aux = load_obj("smpl_models/smpl_uv.obj")
     verts_uv = aux.verts_uvs
-    texture_image_path = "/data/smpl_models/smpl/m_01_alb.002.png"
+    texture_image_path = "smpl_models/m_01_alb.002.png"
     texture_image = Image.open(texture_image_path)
     texture_image = texture_image.convert("RGB")
     texture_image = np.array(texture_image) / 255.0
     texture_image = torch.tensor(texture_image, dtype=torch.float32)[None]
 
-    # smpl_mesh = load_objs_as_meshes(["/data/smplx_models/smpl_uv.obj"], device=device)
-
     faces = f.verts_idx
     faces_uvs = f.textures_idx
-    # verts_uv = torch.cat((verts_uv[:, [0]], 1-verts_uv[:, [1]]), dim=1)
     
     texture = TexturesUV(
         maps=texture_image, 
